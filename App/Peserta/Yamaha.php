@@ -19,21 +19,16 @@ class Yamaha extends Peserta implements InfoM {
 	}
 
 
-	// Setter = Untuk men setting nilai 
+	
 
 	// Untuk code ini __CLASS__ berfungsi untuk mengambil nama class yang sedang di akses semisal kalian mengakses class yamaha maka kalian hanya perlu mengetik kan __CLASS__ untuk menampilkan Yamaha
-
-
-	public function setMotor($berapa) {
-		$this->berapa = $berapa;
-	}
 
 
 	// Getter Untuk mendapatkan Data ya cuman nama Class doang sih untuk membedakan getter mana setter ya bisa kalian Isi dengan sesuak kalian cuman biar gak bingung ya kasih getInfo biar tau getInfo ini untuk mendapatkan info 
 
 
 	public function getInfoM() {
-		$a = __CLASS__ . " {$this->jenisM}" . " ada {$this->berapa} Unit ";
+		$a = __CLASS__ . " {$this->jenisM}";
 
 		return $a;
 	}

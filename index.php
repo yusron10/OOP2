@@ -12,14 +12,24 @@ require_once 'App/init.php';
 $m1 = new Yamaha ("Mio GT", "Putih");
 $m2 = new Honda("Vario 125", "Merah");
 
-$m1->setMotor(3);
+// Mobil
+
+$m3 = new Subaru("BRZ", "Biru");
+$m4 = new Toyota("Rush", "Putih");
 
 
 $m = new App();
 $m->tambahMtr($m1);
+$m->tambahMtr($m2);
+$m->tambahMobil($m3);
+$m->tambahMobil($m4);
 echo $m->print();
 echo "<br>";
+echo $m->tempel();
 echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "Proses : <br>";
 $m1->speedUp();
 echo "<br>";
 $m1->speedUp();

@@ -17,4 +17,20 @@ public function print() {
 
 	return $c;
 }
+
+public $mobil = array();
+
+public function TambahMobil(Peserta $peserta) {
+	$this->finaslisMobil[] = $peserta;
+}
+
+public function tempel() {
+	$d = "Daftar Mobil : <br>";
+	foreach ($this->finaslisMobil as $x) {
+		$d .= "- {$x->getInfoM()} <br>";
+	}
+
+	return $d;
+}
+
 }
